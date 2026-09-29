@@ -37,9 +37,9 @@ CCCPはPocketPostPet をインターネットに繋げる小さなプログラ�
 - PocketPostPet本体
 - MMC 16M(Windows CE化に必要)
 
-### 全体イメージ
+## つなぎ方
 
-### 赤外線ユニット設定変更
+## 1.赤外線ユニット設定変更
 
 赤外線ユニットは、9600bps対応となるようにはんだ付けをしてください。
 MY018の場合はC0B0A0が結線となるようにしてください。
@@ -49,7 +49,7 @@ MY018の場合はC0B0A0が結線となるようにしてください。
 
 ---
 
-## 1. PocketPostPet を Windows CE 化する
+## 2. PocketPostPet を Windows CE 化する
 
 CCCPを使用するには、**PocketPostPetのWindows CE化が必須**です。
 Windows CE化については、以下のページを参考にしてください。
@@ -60,7 +60,7 @@ CCCPは、この赤外線接続設定で使用します。
 
 ---
 
-## 2. CCCP を M5Burner で書き込む
+## 3. CCCP を M5Burner で書き込む
 
 CCCPは **M5Burner** から書き込めます。
 M5BurnerはM5Stack公式のファームウェア書き込みツールです。
@@ -75,7 +75,7 @@ Cardputer ADVへ書き込んだら起動してください。
 
 ---
 
-## 3. Cardputer と赤外線ユニットを接続する
+## 4. Cardputer と赤外線ユニットを接続する
 
 Cardputer と赤外線ユニットは Grove to Duponケーブルで接続します。
 赤外線ユニットに印刷された以下の表記を確認して接続してください。
@@ -89,7 +89,7 @@ Cardputer と赤外線ユニットは Grove to Duponケーブルで接続しま�
 
 ---
 
-## 4. Wi-Fi を設定する
+## 5. Wi-Fi を設定する
 
 Cardputerの画面で、
 
@@ -103,7 +103,7 @@ Cardputerの画面で、
 
 ---
 
-## 5. LLM を設定する
+## 6. LLM を設定する
 
 ```text
 設定
@@ -150,7 +150,7 @@ CCCPを2台用意すれば、それぞれのPocketPostPetからメールを送�
 
 ---
 
-## 6. メールアドレスについて
+## 7. メールアドレスについて
 
 CCCPでは、PocketPostPetとのやり取り専用のテスト用ドメインを使用します。
 
@@ -202,7 +202,7 @@ momo@llm.test
 
 ---
 
-## 7. 最初のメールを送る
+## 8. 最初のメールを送る
 
 新しい `@llm.test` の宛先へ初めてメールを送るときは、  
 本文を**4行だけ**にしてください。
@@ -320,4 +320,5 @@ CCCPが内容を読み、相手との間柄やこれまでのやり取りを参�
 
 ## License
 
-TBD
+- CCCPはMITライセンスです。
+- PostPet / PocketPostPetは、ソニーネットワークコミュニケーションズ株式会社の登録商標です。
