@@ -1,3 +1,9 @@
+/*
+ * CCCP - Cardputer Communication Connector for PocketPostPet
+ * Copyright (c) 2026 Layer812
+ * SPDX-License-Identifier: MIT
+ */
+
 #include <M5Cardputer.h>
 #include <WiFi.h>
 #include <Preferences.h>
