@@ -1,0 +1,8 @@
+# CCCP_R1S_M5CARDPUTER_111_IDF55_WRAPPER
+# Minimal ESP-IDF wrapper for upstream M5Cardputer 1.1.1.
+file(GLOB_RECURSE M5CARDPUTER_SRCS "src/*.cpp")
+idf_component_register(
+    SRCS ${M5CARDPUTER_SRCS}
+    INCLUDE_DIRS "src"
+    REQUIRES arduino-esp32 m5unified
+)

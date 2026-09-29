@@ -1,0 +1,9 @@
+dependencies:
+  idf:
+    version: ">=5.3,<6.0"
+  espressif/arduino-esp32:
+    version: "3.3.11"
+  m5stack/m5unified:
+    version: "0.2.19"
+  m5stack/m5gfx:
+    version: "0.2.26"
